@@ -10,5 +10,4 @@ path = "src/extension.rs"
 crate-type = ["cdylib"]
 
 [dependencies]
-serde = "1.0"
 zed_extension_api = "0.2.0"

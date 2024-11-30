@@ -314,7 +314,6 @@ dependencies = [
 name = "zed-commands-context-server"
 version = "0.1.0"
 dependencies = [
- "serde",
  "zed_extension_api",
 ]
 
