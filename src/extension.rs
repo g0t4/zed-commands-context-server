@@ -24,6 +24,7 @@ impl zed::Extension for CommandsModelContextExtension {
         //if version.as_deref() != Some(PACKAGE_VERSION) {
         //    zed::npm_install_package(PACKAGE_NAME, PACKAGE_VERSION)?;
         //}
+        println!("commands model context extension starting");
 
 
         Ok(Command {
