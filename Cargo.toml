@@ -6,7 +6,7 @@ publish = false
 license = "MIT"
 
 [lib]
-path = "src/main.rs"
+path = "src/extension.rs"
 crate-type = ["cdylib"]
 
 [dependencies]
