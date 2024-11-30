@@ -7,14 +7,14 @@ const PACKAGE_NAME: &str = "@zeddotdev/postgres-context-server";
 const PACKAGE_VERSION: &str = "0.1.2";
 const SERVER_PATH: &str = "node_modules/@zeddotdev/postgres-context-server/index.mjs";
 
-struct PostgresModelContextExtension;
+struct CommandsModelContextExtension;
 
 #[derive(Debug, Deserialize)]
 struct PostgresContextServerSettings {
     database_url: String,
 }
 
-impl zed::Extension for PostgresModelContextExtension {
+impl zed::Extension for CommandsModelContextExtension {
     fn new() -> Self {
         Self
     }
@@ -52,5 +52,5 @@ impl zed::Extension for PostgresModelContextExtension {
     }
 }
 
-zed::register_extension!(PostgresModelContextExtension);
+zed::register_extension!(CommandsModelContextExtension);
 
