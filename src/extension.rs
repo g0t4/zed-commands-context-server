@@ -1,9 +1,10 @@
-use std::env;
+//use std::env;
 use zed_extension_api::{self as zed, Command, ContextServerId, Project, Result};
 
 //const PACKAGE_NAME: &str = "@zeddotdev/postgres-context-server";
 //const PACKAGE_VERSION: &str = "0.1.2";
-const SERVER_PATH: &str = "node_modules/@zeddotdev/postgres-context-server/index.mjs";
+//const SERVER_PATH: &str = "node_modules/@zeddotdev/postgres-context-server/index.mjs";
+const SERVER_DEV_PATH: &str = "/Users/wes/repos/github/g0t4/mcp-server-commands/build/index.js";
 
 struct CommandsModelContextExtension;
 
@@ -28,11 +29,12 @@ impl zed::Extension for CommandsModelContextExtension {
         Ok(Command {
             command: "node".to_string(),
             args: vec![
-                env::current_dir()
-                    .unwrap()
-                    .join(SERVER_PATH)
-                    .to_string_lossy()
-                    .to_string(),
+                SERVER_DEV_PATH.to_string(),
+                //env::current_dir()
+                //    .unwrap()
+                //    .join(SERVER_PATH)
+                //    .to_string_lossy()
+                //    .to_string(),
             ],
             env: vec![
             //    ("DATABASE_URL".into(), settings.database_url)
