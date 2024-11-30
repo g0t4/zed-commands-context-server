@@ -2,5 +2,12 @@
 name = "zed-commands-context-server"
 version = "0.1.0"
 edition = "2021"
+publish = false
+license = "MIT"
+
+[lib]
+path = "src/main.rs"
+crate-type = ["cdylib"]
 
 [dependencies]
+serde = "1.0"
