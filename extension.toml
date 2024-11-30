@@ -1,10 +1,10 @@
-id = "postgres-context-server"
-name = "Postgres Context Server"
-description = "Model Context Server for PostgreSQL"
+id = "commands-context-server"
+name = "Commands Context Server"
+description = "Model Context Server for Commands (CLI)"
 version = "0.0.1"
 schema_version = 1
-authors = ["Max Brunsfeld <max@zed.dev>"]
-repository = "https://github.com/zed-extensions/postgres-context-server"
+authors = ["Wes Higbee <wes.mcclure@gmail.com>"]
+repository = "https://github.com/g0t4/zed-commands-context-server"
 
-[context_servers.postgres-context-server]
-name = "Postgres Context Server"
+[context_servers.commands-context-server]
+name = "Commands Context Server"
